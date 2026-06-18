@@ -1,0 +1,15 @@
+Assignment 2 — System Modeling
+UML Sequence Diagram + State Diagram  
+
+
+Q1. Purpose of Modeling:
+In the sequence diagram, I left out low-level implementation details such as database queries, variable values, and internal program logic. The diagram focuses only on the interaction between system components and users. This simplification makes the model easier to understand and analyze. It is appropriate because the main purpose is to show communication flow rather than coding details.
+
+Q2. Sequence Diagram:
+The order of messages in a sequence diagram shows the exact sequence in which interactions occur over time. It helps identify dependencies between actions and the flow of control in the system. A simple bullet-point list cannot clearly represent timing and message exchange. Therefore, the sequence diagram provides a more accurate view of system behavior.
+
+Q3. State Diagram:
+One guarded transition in the state diagram is from "Login Attempt" to "Access Granted" with the condition [Valid Credentials]. This guard means that the user can proceed only if the entered username and password are correct. The condition is necessary to prevent unauthorized access. It ensures that the system changes state only when specific requirements are met.
+
+Q4. Sequence vs State:
+A sequence diagram emphasizes the interactions and message flow between objects over time. A state diagram emphasizes how an object changes from one state to another based on events and conditions. The sequence diagram focuses on communication, while the state diagram focuses on behavior and state changes. Together, they provide complementary views of the same system.

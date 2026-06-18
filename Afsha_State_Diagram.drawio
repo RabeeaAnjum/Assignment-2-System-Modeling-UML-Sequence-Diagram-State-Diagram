@@ -1,0 +1,91 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="KxVdOredo5Q2_FEz-We6">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bgN2kRLo6EjOeHeDt7Tf-1" parent="1" style="ellipse;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="14" width="14" x="88" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="bgN2kRLo6EjOeHeDt7Tf-2" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" value="Pending" vertex="1">
+          <mxGeometry height="40" width="72" x="59" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="bgN2kRLo6EjOeHeDt7Tf-3" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Confirmed" vertex="1">
+          <mxGeometry height="40" width="91" x="219" y="222" as="geometry" />
+        </mxCell>
+        <mxCell id="bgN2kRLo6EjOeHeDt7Tf-4" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;" value="Cancelled" vertex="1">
+          <mxGeometry height="40" width="86" x="20" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="bgN2kRLo6EjOeHeDt7Tf-5" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656;" value="Active" vertex="1">
+          <mxGeometry height="40" width="61" x="445" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="bgN2kRLo6EjOeHeDt7Tf-6" parent="1" style="rounded=1;arcSize=20;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Completed" vertex="1">
+          <mxGeometry height="40" width="94" x="428" y="474" as="geometry" />
+        </mxCell>
+        <mxCell id="bgN2kRLo6EjOeHeDt7Tf-7" parent="1" style="ellipse;shape=endState;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" value="" vertex="1">
+          <mxGeometry height="14" width="14" x="271" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="bgN2kRLo6EjOeHeDt7Tf-8" edge="1" parent="1" source="bgN2kRLo6EjOeHeDt7Tf-1" style="curved=1;startArrow=none;;fillColor=none;;exitX=0.47;exitY=1;entryX=0.49;entryY=0;rounded=0;" target="bgN2kRLo6EjOeHeDt7Tf-2" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bgN2kRLo6EjOeHeDt7Tf-9" edge="1" parent="1" source="bgN2kRLo6EjOeHeDt7Tf-2" style="curved=1;startArrow=none;;fillColor=none;;exitX=0.99;exitY=0.86;entryX=0.5;entryY=0;rounded=0;" target="bgN2kRLo6EjOeHeDt7Tf-3" value="reservationSubmitted / databaseWriteSuccess">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="265" y="173" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bgN2kRLo6EjOeHeDt7Tf-10" edge="1" parent="1" source="bgN2kRLo6EjOeHeDt7Tf-2" style="curved=1;startArrow=none;;fillColor=none;;exitX=-0.01;exitY=0.86;entryX=0.03;entryY=0;rounded=0;" target="bgN2kRLo6EjOeHeDt7Tf-4" value="databaseWriteFailure">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-75" y="173" />
+              <mxPoint x="-75" y="311" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bgN2kRLo6EjOeHeDt7Tf-11" edge="1" parent="1" source="bgN2kRLo6EjOeHeDt7Tf-3" style="curved=1;startArrow=none;;fillColor=none;;exitX=1;exitY=0.87;entryX=0.5;entryY=0;rounded=0;" target="bgN2kRLo6EjOeHeDt7Tf-5" value="userArrives / raiseBarrier">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="475" y="311" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bgN2kRLo6EjOeHeDt7Tf-12" edge="1" parent="1" source="bgN2kRLo6EjOeHeDt7Tf-3" style="curved=1;startArrow=none;;fillColor=none;;exitX=0;exitY=0.85;entryX=0.44;entryY=0;rounded=0;" target="bgN2kRLo6EjOeHeDt7Tf-4" value="userCancels [at least 1 hour before slot]">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="45" y="311" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bgN2kRLo6EjOeHeDt7Tf-13" edge="1" parent="1" source="bgN2kRLo6EjOeHeDt7Tf-3" style="curved=1;startArrow=none;;fillColor=none;;exitX=0.5;exitY=1;entryX=1;entryY=0.13;rounded=0;" target="bgN2kRLo6EjOeHeDt7Tf-4" value="noShow [timeout after 15 min]">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="265" y="311" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bgN2kRLo6EjOeHeDt7Tf-14" edge="1" parent="1" source="bgN2kRLo6EjOeHeDt7Tf-5" style="curved=1;startArrow=none;;fillColor=none;;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="bgN2kRLo6EjOeHeDt7Tf-6" value="userLeaves / lowerBarrier">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bgN2kRLo6EjOeHeDt7Tf-15" edge="1" parent="1" source="bgN2kRLo6EjOeHeDt7Tf-4" style="curved=1;startArrow=none;;fillColor=none;;exitX=0.5;exitY=1;entryX=0.02;entryY=0.43;rounded=0;" target="bgN2kRLo6EjOeHeDt7Tf-7" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="63" y="539" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bgN2kRLo6EjOeHeDt7Tf-16" edge="1" parent="1" source="bgN2kRLo6EjOeHeDt7Tf-6" style="curved=1;startArrow=none;;fillColor=none;;exitX=0.5;exitY=1;entryX=1.02;entryY=0.42;rounded=0;" target="bgN2kRLo6EjOeHeDt7Tf-7" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="475" y="539" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
